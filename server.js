@@ -22,7 +22,7 @@ app.get('/article-one', function(req, res){
 app.get('/article-two', function(req, res){
    res.send('requested for article two and it will be served here'); 
 });
-var Pool = new Pool(config);
+var pool = new Pool(config);
 app.get('/test-db',function(req, res){
    //make a request
    //return a response with a response
